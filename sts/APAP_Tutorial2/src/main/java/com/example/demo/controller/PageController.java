@@ -35,4 +35,15 @@ public class PageController {
 //		}
 //		return "greeting";
 //	}
+	
+	@RequestMapping("/perkalian")
+	public String perkalian (@RequestParam(value= "a", required=false, defaultValue="0") int a, @RequestParam(value= "b", required=false, defaultValue="0") int b, Model model) {	
+		
+		model.addAttribute("a", a);
+		model.addAttribute("b", b);
+		model.addAttribute("hasil", a*b);
+		return "perkalian";
+	
+	}
+	
 }

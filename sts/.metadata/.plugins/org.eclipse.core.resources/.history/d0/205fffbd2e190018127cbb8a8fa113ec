@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Perkalian Page</title>
+	</head>
+	<body>
+		<p th:text=" ${a} + ' X ' + ${b} + '=' + ${hasil}">Perkalian dua buah angka</p>
+	</body>
+</html>
